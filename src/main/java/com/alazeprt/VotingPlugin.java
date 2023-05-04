@@ -338,7 +338,7 @@ public class VotingPlugin extends JavaPlugin implements CommandExecutor, TabComp
                 list.add("list");
             }
         } else if(args.length == 2){
-            if(args[0].equals("initiate") && sender.hasPermission("vote.initiate") || args[0].equals("delete") && sender.hasPermission("vote.delete") || args[0].equals("vote") || sender.hasPermission("vote.vote")){
+            if(args[0].equals("delete") && sender.hasPermission("vote.delete") || args[0].equals("vote") || sender.hasPermission("vote.vote")){
                 File votelistfile = new File(VotingPlugin.getProvidingPlugin(VotingPlugin.class).getDataFolder(), "votelist.yml");
                 FileConfiguration votelist = YamlConfiguration.loadConfiguration(votelistfile);
                 List<String> votel = votelist.getStringList("votelist");
