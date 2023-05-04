@@ -1,0 +1,29 @@
+name: VotingPlugin
+main: com.alazeprt.VotingPlugin
+version: 1.1
+api-version: 1.13
+commands:
+  vote:
+    description: Plugin Main Command
+permissions:
+  vote.help:
+    description: Allows to use /vote help & /vote
+    default: true
+  vote.list:
+    description: Allows to use /vote list
+    default: true
+  vote.vote:
+    description: Allows to use /vote vote <voting_item>
+    default: true
+  vote.cancel:
+    description: Allows to use /vote cancel
+    default: true
+  vote.get:
+    description: Allows to use /vote get
+    default: true
+  vote.initiate:
+    description: Allows to use /vote initiate <voting_name>
+    default: op
+  vote.delete:
+    description: Allows to use /vote delete <voting_item>
+    default: op

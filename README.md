@@ -1,0 +1,2 @@
+# VotingPlugin
+ A Voting Plugin
